@@ -1,6 +1,6 @@
 const $template = document.createElement('template');
 $template.innerHTML = `
-    <button class="btn">Sign out</button>
+   <!-- <button class="btn">Sign out</button> -->
     <div class="web">
         <div class="boxx">
             <div class="center-outer">

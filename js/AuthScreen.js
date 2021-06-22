@@ -2,12 +2,15 @@ const $template = document.createElement('template');
 $template.innerHTML = `
 <div class="web">
     <div class="auth-screen">
-            <div class ="contain-auth-screen">
-                <login-form></login-form>
-            <div>
-            <div class ="contain-auth-screen">
+            <div class = "border">
+                <div class ="contain-auth-screen">
+                    <login-form></login-form>
+                <div>
+            </div>
+            <!--<div class ="contain-auth-screen">
                 <register-form></register-form>
-            <div>  
+            <div>
+            -->  
     </div>   
 </div>
     

@@ -10,7 +10,7 @@ async function getByTheme(){
     theme = await firebase.firestore().collection('checkTheme').doc("deNIr3kPX64oceB2LROw").get();
 }
 await getByTheme();
-console.log(theme.data().theme);
+//(theme.data().theme);
 
 let $game1 = document.querySelector('game-1');
 let correct;
@@ -24,14 +24,14 @@ async function getByCheck(){
 }
 async function getDocByDatas(){
     let datas = await getByData();
-    console.log(datas);
+    //console.log(datas);
     while(true){
         let checkData = await getByCheck();
         let index = Math.floor(Math.random() * datas.length);
         index = index.toString();
-        console.log(index);
+        //console.log(index);
         let checks = await firebase.firestore().collection('tickGame1').doc(index).get();
-        console.log(checks.data().check);
+        //console.log(checks.data().check);
         if(checks.data().check == true){
             await firebase.firestore().collection('tickGame1').doc(index).update({check: false});
             let randomQuestion = datas[index];

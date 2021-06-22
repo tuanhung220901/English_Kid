@@ -13,7 +13,7 @@ $template.innerHTML = `
             <p class="message-win">Correct</p>
             <div class="options">
             <a href="index.html"><button class="btn">Continue</button></a>
-            <button class="btn back"><a href="/theme/theme.html">Back</a></button>
+            <a href="/theme/theme.html"><button class="btn back">Back</button></a>
             </div>
         </div> 
         <div class = "popup-lose"> 

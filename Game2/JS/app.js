@@ -5,7 +5,7 @@ async function getByTheme(){
     theme = await firebase.firestore().collection('checkTheme').doc("deNIr3kPX64oceB2LROw").get();
 }
 await getByTheme();
-console.log(theme.data().theme);
+//console.log(theme.data().theme);
 let $game2 = document.querySelector('fill-in');
 // $game2.setAttribute('back-ground',data2);
 // $game2.setAttribute('picture',data1);
@@ -21,16 +21,16 @@ async function getDocByDatas(){
     let datas = await getByData();
     while(true){
         let dataCheck = await getByDataCheck();
-        console.log(datas.length);
+        //console.log(datas.length);
         let index = Math.floor(Math.random() * dataCheck.length);
         index = index.toString();
-        console.log(index);
+        //console.log(index);
         let checks = await firebase.firestore().collection('tickGame2').doc(index).get();
-        console.log(checks.data().check);
+        //console.log(checks.data().check);
         if(checks.data().check == true){
             await firebase.firestore().collection('tickGame2').doc(index).update({check: false});
             let randomQuestion = datas[index];
-            console.log(randomQuestion);
+            //console.log(randomQuestion);
             $game2.setAttribute('text',randomQuestion.text);
             $game2.setAttribute('back-ground',randomQuestion.backGround);
             $game2.setAttribute('image',randomQuestion.image);

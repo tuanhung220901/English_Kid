@@ -11,8 +11,9 @@ $template.innerHTML = `
         <div class="icon-win"></div>
         <p class="message-win">Correct</p>
         <div class="options">
-        <a href="index.html"><button class="btn">Continue</button></a>
-        <button class="btn" id="">Back</button>
+            <a href="index.html"><button class="btn">Continue</button></a>
+            <a href="/theme/theme.html"><button class="btn" id="">Back</button></a> 
+
         </div>
     </div> 
     <div class = "popup-lose"> 
@@ -20,7 +21,7 @@ $template.innerHTML = `
         <p class="message-lose">Incorrect</p>
         <div class="options">
             <button class="btn close-popup">Try Again</button>
-            <button class="btn">Back</button> 
+            <a href="/theme/theme.html"><button class="btn">Back</button></a> 
         </div>  
     </div>
         <div class="container">

@@ -26,17 +26,17 @@ body{
     transition: all .4s ease;
   }
   #tv:hover {
-    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+   
     box-shadow: 10px 10px rgba(0,0,0,.25);
   }
   
 .carousel .carousel-item h3{
     margin: -5px 0 0;
     padding: 0;
-    /* background: #DDDDDD; */
+    
     color: #F75858;
     box-sizing: border-box;
-    /* padding: 10px 5px; */
+   
     font-weight: bold;
     font-size: 2em;
     text-align: center;
