@@ -1,0 +1,5 @@
+@import url("./text.css");
+@import url("./webScreen.css");
+*{
+    font-family: 'Sigmar One', cursive;
+}

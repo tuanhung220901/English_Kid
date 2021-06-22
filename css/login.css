@@ -1,0 +1,62 @@
+@import url("star.css");
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  /* background-image: url("https://free4kwallpapers.com/uploads/originals/2015/11/13/fresh-fruits-wallpaper.jpg"); */
+  background-size: 100% 100%;
+}
+  .web{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+.auth-screen{
+    display: flex;
+    margin-top: 10%;
+    height: 865px;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: rgb(255, 112, 112);
+    box-shadow: rgba(29, 29, 48, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 30px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -12px 16px 0px inset;
+}
+.title{
+    color: rgb(36, 17, 14);
+}
+::placeholder {
+  color: rgb(41, 33, 33);
+}
+.login-btn{
+  display: flex;
+  margin-left: 45%;
+  margin-top: 5%;
+  border-radius: 10px;
+  
+  width: 60px;
+  height: 50px;
+}
+.login-btn:hover{
+  opacity: 0.9;
+}
+.register-btn{
+  display: flex;
+  margin-left: 45%;
+  margin-top: 5%;
+  border-radius: 10px;
+  text-align: center;
+  width: 75px;
+  height: 50px;
+}
+.register-btn:hover{
+  opacity: 0.9;
+}
+.btn{
+  display: flex;
+
+  margin-left: 92%;
+  margin-top: 2%;
+  border-radius: 10px;
+  width: 105px;
+  height: 40px;
+}

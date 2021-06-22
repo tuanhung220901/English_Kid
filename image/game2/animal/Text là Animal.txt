@@ -1,0 +1,2 @@
+1 số lựa chọn fish,bear,fox,wolf,puffin,seal,kangaroo,sheep,donke,bees,dove,
+rabbit,mouse,hippo,fly

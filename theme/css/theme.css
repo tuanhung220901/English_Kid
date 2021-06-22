@@ -1,0 +1,141 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+}
+html,
+    body{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .container{
+        display: flex; 
+        background-color: rgb(240, 240, 82);
+        /* flex-direction: row-reverse; */
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+    }
+    /* <div class="card card-color">
+            <div class="border"></div>
+            <div class="card-image"></div>
+            <div class="card-text"></div>
+        </div> */
+    .card{
+    display: flex;
+    height: 670px;
+    width: 600px;
+    margin-left: 100px;
+    cursor: pointer;
+    
+    }
+    .group{
+        width: 600px;
+        height: 650px;
+        display: flex;
+        opacity: 0;
+    }
+    .card:hover .group {
+        opacity: 1;
+        animation: bounceIn 0.6s linear;
+    }
+    @keyframes bounceIn {
+        0%,
+        20%,
+        40%,
+        60%,
+        80%,
+        to {
+            -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        0% {
+            opacity: 0;
+            -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+        }
+        20% {
+            -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+        40% {
+            -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: scale3d(1.01, 1.01, 1.01);
+            transform: scale3d(1.01, 1.01, 1.01);
+        }
+        80% {
+            -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+    .card-color{
+        display: flex;
+        margin-left: 10%;
+        margin-top: 8%;
+        height: 85%;
+        width: 86%;
+        background-color: #ce3a3a;
+        box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    }
+    .card-image{
+        width: 16%;
+        height: 29%;
+        z-index: 12;
+        position: absolute; 
+        background-image: url("https://ecdn.teacherspayteachers.com/thumbitem/Reading-Fill-in-the-missing-word-2415651-1500873455/original-2415651-1.jpg");
+        background-size: 100% 100%; 
+        border: dotted 3px #41403E;
+    }
+    /* .border{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 38px;
+        width: 24%;
+        height: 51%;
+        padding: 6px;
+        border: 4px solid rgb(247, 3, 3);
+        opacity: 0.5;
+        box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    } */
+    .icon{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        z-index: 100;
+        margin-top: 56%;
+        background-image: url("/image/icon1.png");
+        background-size: 100% 100%;
+    }
+    .card-text{
+        display: flex;
+        width: 9%;
+        position: absolute;
+        text-align: center;
+        margin-top: 17%;
+        margin-left: 11%;
+        font-weight: 800;
+        font-size:xxx-large;
+        color:rgb(77, 0, 107);  
+    }
+    /* .card-text .color{
+        
+    } */
+    .card-list{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }

@@ -1,0 +1,51 @@
+chalk (
+pen
+pencil
+eraser
+)
+
+blackboard (
+desk
+chair
+window
+)
+
+
+teacher (
+student
+classmate
+nurse
+)
+
+
+scienceroom (
+nurse office
+classroom
+musicroom
+)
+
+palette
+{
+flask
+binders
+file holder
+}
+
+stapler{
+scissors
+compass
+ballpoits
+}
+
+calculator{
+clips
+pins
+clock
+}
+
+globe{
+map
+highlighter
+backpack
+}
+
